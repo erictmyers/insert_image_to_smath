@@ -17,6 +17,7 @@ Instructions:
  - Select all text in the edit region and copy it to the clipboard.
  - Open the ".sm" file in a plain text editor (not in SMath)
  - Find the line in the file that says \<regions type="content"\>. Add a new line after that.
+ [![Raw file insert position](/images/raw_file_insert_position.png "Raw file insert position")]
  - Paste the text from the clipboard into the new line and save the text file.
  - When the file is re-opened from SMath , the image will be in the top left corner of the first page, just drag it where it needs to go.
  - Multiple successive screen captures can be taken and pasted in, just put each in a new line.
