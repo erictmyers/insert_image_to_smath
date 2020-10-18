@@ -143,8 +143,6 @@ class XSelect:
         )
 
 
-
-
 class Screenshot (QtWidgets.QWidget):
     def __init__(self,parent=None):
         QtWidgets.QWidget.__init__(self,parent)
@@ -193,8 +191,7 @@ class Screenshot (QtWidgets.QWidget):
         
         self.show()
     def generate_text(self):
-        reg_index=self.fileSelectionLineEdit.text()
-        region_text='    <region id="'+reg_index+'" left="1" top="1" width="'+str(self.area[2])+'" height="'+str(self.area[3])+'" color="#000000" bgColor="#ffffff">\n      <picture>\n        <raw format="png" encoding="base64">'+self.encoded_pic.data().decode()+'</raw>\n      </picture>\n    </region>'
+        region_text='    <region left="1" top="1" width="'+str(self.area[2])+'" height="'+str(self.area[3])+'" color="#000000" bgColor="#ffffff">\n      <picture>\n        <raw format="png" encoding="base64">'+self.encoded_pic.data().decode()+'</raw>\n      </picture>\n    </region>'
         self.regionTextEdit.setText(region_text)
 
 if __name__=='__main__':
