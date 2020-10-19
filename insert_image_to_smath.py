@@ -2,6 +2,11 @@
 
 # Adapted from code at https://gist.github.com/aspotton/1888298869c8adf59a577f2fe9d32fc8
 
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+
 import sys
 import os
 import mmap
