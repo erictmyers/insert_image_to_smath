@@ -18,6 +18,7 @@ Instructions:
  - When the file is re-opened from SMath, the image will be in the top left corner of the first page, just drag it where it needs to go.
 
  **Warning**
+ 
  This tool writes directly to your SMath (.sm) files. It is **strongly** advised to make backups prior to using.
 
 Much of the code in this utility was borrowed from:
