@@ -17,6 +17,8 @@ Instructions:
  - Confirm the selected files in the list, then click the "Insert Image Into File(s)" button.
  - When the file is re-opened from SMath, the image will be in the top left corner of the first page, just drag it where it needs to go.
 
+ **Warning**
+ This tool writes directly to your SMath (.sm) files. It is **strongly** advised to make backups prior to using.
 
 Much of the code in this utility was borrowed from:
  - https://gist.github.com/aspotton/1888298869c8adf59a577f2fe9d32fc8
