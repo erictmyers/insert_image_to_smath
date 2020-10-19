@@ -1,26 +1,21 @@
 # insert_image_to_smath
 
-This is a small utility for use with the Mono/Linux version of SMath. It allows the user to grab an image from a selected area of the screen, and generates encoded text with formatting suitable to paste into the raw smath file.
+This is a small utility for use with the Mono/Linux version of SMath. It allows the user to grab an image from a selected area of the screen, and insert the image into one or more SMath files.
 
-Requires Python 3, PyQt 5, Linux with X Windows
+Requires Python 3, PyQt 5, python3-xlib, and Linux with X Windows
 
 [![Application screenshot](/images/Screenshot.png "Application screenshot")]
 
 Instructions:
- - Close the ".sm" file you are working on from SMath, or exit SMath
+ - Close all ".sm" files that will have an image inserted, or exit SMath
  - Start the screen capture utility (e.g. set it as executable or run "python3 insert_image_to_smath.py" from the command line or shortcut)
  - Make sure the screen area you want to capture is visible (not minimized or hidden behind any window except this utility)
  - Click the "Select Area" button. The utility will hide itself.
  - Click and drag a rectangular selection box around the screen area you want to capture.
  - Once the left mouse button is released the utility will reappear, with a preview of the captured image in the field above the "Select Area" button.
- - Click the "Generate Region Text" button. The edit region below the button will be populated with text.
- - Select all text in the edit region and copy it to the clipboard.
- - Open the ".sm" file in a plain text editor (not in SMath)
- - Find the line in the file that says \<regions type="content"\>. Add a new line after that.
- [![Raw file insert position](/images/raw_file_insert_position.png "Raw file insert position")]
- - Paste the text from the clipboard into the new line and save the text file.
+ - Click the "Select File(s)" button, and choose the desired files from the resulting dialog.
+ - Confirm the selected files in the list, then click the "Insert Image Into File(s)" button.
  - When the file is re-opened from SMath, the image will be in the top left corner of the first page, just drag it where it needs to go.
- - Multiple successive screen captures can be taken and pasted in, just put each in a new line.
 
 
 Much of the code in this utility was borrowed from:

@@ -13,28 +13,8 @@
   <property name="windowTitle">
    <string>Insert Screen Area to SMath</string>
   </property>
-  <layout class="QGridLayout" name="gridLayout_4">
-   <item row="1" column="1">
-    <widget class="QPushButton" name="quitScreenshotButton">
-     <property name="text">
-      <string>Quit</string>
-     </property>
-    </widget>
-   </item>
-   <item row="1" column="0">
-    <spacer name="horizontalSpacer_2">
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>699</width>
-       <height>20</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-   <item row="0" column="0" colspan="2">
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0" colspan="3">
     <widget class="QSplitter" name="splitter">
      <property name="orientation">
       <enum>Qt::Vertical</enum>
@@ -83,30 +63,17 @@
        <enum>QFrame::Raised</enum>
       </property>
       <layout class="QGridLayout" name="gridLayout_2">
-       <item row="0" column="2">
-        <widget class="QPushButton" name="generateTextButton">
+       <item row="0" column="0">
+        <widget class="QPushButton" name="selectFilesButton">
          <property name="enabled">
-          <bool>false</bool>
+          <bool>true</bool>
          </property>
          <property name="text">
-          <string>Generate Region Text</string>
+          <string>Select File(s)</string>
          </property>
         </widget>
        </item>
        <item row="0" column="1">
-        <spacer name="horizontalSpacer_3">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item row="0" column="3">
         <spacer name="horizontalSpacer">
          <property name="orientation">
           <enum>Qt::Horizontal</enum>
@@ -119,24 +86,41 @@
          </property>
         </spacer>
        </item>
-       <item row="1" column="0" colspan="5">
-        <widget class="QGroupBox" name="groupBox">
-         <property name="title">
-          <string>Text to be pasted into &quot;content&quot; regions of SMath file:</string>
-         </property>
-         <layout class="QGridLayout" name="gridLayout">
-          <item row="0" column="0">
-           <widget class="QTextEdit" name="regionTextEdit">
-            <property name="readOnly">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </widget>
+       <item row="1" column="0" colspan="2">
+        <widget class="QListWidget" name="fileListWidget"/>
        </item>
       </layout>
      </widget>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QPushButton" name="insertImageButton">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="text">
+      <string>Insert Image Into File(s)</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <spacer name="horizontalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>699</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="2">
+    <widget class="QPushButton" name="quitScreenshotButton">
+     <property name="text">
+      <string>Quit</string>
+     </property>
     </widget>
    </item>
   </layout>
