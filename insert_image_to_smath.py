@@ -8,7 +8,6 @@
 # (at your option) any later version.
 
 import sys
-import os
 import mmap
 
 from PyQt5 import QtCore,QtGui,QtWidgets,uic
@@ -16,7 +15,6 @@ from PyQt5.QtGui import QPixmap
 from PyQt5.QtWidgets import QApplication
 from PyQt5.QtWidgets import QFileDialog
 from Xlib import X, display
-from subprocess import getoutput
 
 class XSelect:
     def __init__(self, display):
