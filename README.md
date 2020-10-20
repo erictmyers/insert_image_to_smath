@@ -17,9 +17,9 @@ Instructions:
  - Confirm the selected files in the list, then click the "Insert Image Into File(s)" button.
  - When the file is re-opened from SMath, the image will be in the top left corner of the first page, just drag it where it needs to go.
 
+Version 0.3 features a much nicer interface via the pyqt_screenshot module from https://github.com/SeptemberHX/screenshot. It no longer requires xlib and should be fully cross-platform if use on Windows is desired.
+This version requires PyQt and Qt versions >= 5.10. For users with older versions of Qt/PyQt, please see version 0.2
+
  **Warning**
  
  This tool writes directly to your SMath (.sm) files. It is **strongly** advised to make backups prior to using.
-
-Version 0.3 features a much nicer interface via the pyqt_screenshot module from https://github.com/SeptemberHX/screenshot. It no longer requires xlib and should be fully cross-platform if use on Windows is desired.
-This version requires PyQt and Qt versions >= 5.10. For users with older versions of Qt/PyQt, please see version 0.2
