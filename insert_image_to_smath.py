@@ -22,8 +22,6 @@ class SMScreenshot (QtWidgets.QWidget):
     def __init__(self,parent=None):
         QtWidgets.QWidget.__init__(self,parent)
         uic.loadUi("image_capture_form.ui",self)
-
-        self.area = None
         
         self.selectAreaButton.clicked.connect(self.shootScreen)
         self.quitScreenshotButton.clicked.connect(self.close)
@@ -241,7 +239,6 @@ if __name__=='__main__':
     if sys.version_info[0] < 3:
         print("Requires Python 3")
         sys.exit()
-
     QtWidgets.QApplication.setAttribute(Qt.AA_EnableHighDpiScaling)
     a=QtWidgets.QApplication(sys.argv)
     w=SMScreenshot()
